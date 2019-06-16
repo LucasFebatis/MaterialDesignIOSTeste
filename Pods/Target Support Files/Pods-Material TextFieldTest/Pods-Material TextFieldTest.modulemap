@@ -1,0 +1,6 @@
+framework module Pods_Material_TextFieldTest {
+  umbrella header "Pods-Material TextFieldTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
