@@ -9,5 +9,6 @@ target 'Material TextFieldTest' do
   pod 'MaterialComponents/TextFields'
   pod 'MaterialComponents/Tabs'
   pod 'MaterialComponents/Buttons'
+  pod 'MaterialComponents/BottomSheet'
 
 end

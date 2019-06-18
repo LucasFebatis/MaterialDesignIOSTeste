@@ -94,7 +94,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pq-AA-DAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491" y="797"/>
+            <point key="canvasLocation" x="268" y="797"/>
+        </scene>
+        <!--Bottom Sheet Controller-->
+        <scene sceneID="MUe-hf-wkK">
+            <objects>
+                <viewController storyboardIdentifier="bottomSheetController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j3P-wI-hCW" customClass="BottomSheetController" customModule="Material_TextFieldTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pFp-19-g9a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ0-sL-2es" userLabel="Abrir Sheet Bottom" customClass="MDCFlatButton">
+                                <rect key="frame" x="141" y="433" width="132" height="30"/>
+                                <state key="normal" title="Abrir Bottom Sheet">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="abrirBottomSheet" destination="j3P-wI-hCW" eventType="touchUpInside" id="z1k-s5-1dQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uQ0-sL-2es" firstAttribute="centerY" secondItem="pFp-19-g9a" secondAttribute="centerY" id="7aW-aw-s6u"/>
+                            <constraint firstItem="uQ0-sL-2es" firstAttribute="centerX" secondItem="pFp-19-g9a" secondAttribute="centerX" id="bSQ-oy-WNl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uyd-7O-qyc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZz-f9-A5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="797"/>
         </scene>
     </scenes>
 </document>

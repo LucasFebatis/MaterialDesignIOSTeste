@@ -1,5 +1,10 @@
 PODS:
   - MaterialComponents/AnimationTiming (84.6.0)
+  - MaterialComponents/BottomSheet (84.6.0):
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
   - MaterialComponents/Buttons (84.6.0):
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -14,6 +19,8 @@ PODS:
     - MaterialComponents/private/Math
   - MaterialComponents/Palettes (84.6.0)
   - MaterialComponents/private/Application (84.6.0)
+  - MaterialComponents/private/KeyboardWatcher (84.6.0):
+    - MaterialComponents/private/Application
   - MaterialComponents/private/Math (84.6.0)
   - MaterialComponents/Ripple (84.6.0):
     - MaterialComponents/AnimationTiming
@@ -21,6 +28,9 @@ PODS:
   - MaterialComponents/ShadowElevations (84.6.0)
   - MaterialComponents/ShadowLayer (84.6.0):
     - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (84.6.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
   - MaterialComponents/Shapes (84.6.0):
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
@@ -46,6 +56,7 @@ PODS:
   - MDFTextAccessibility (2.0.0)
 
 DEPENDENCIES:
+  - MaterialComponents/BottomSheet
   - MaterialComponents/Buttons
   - MaterialComponents/Tabs
   - MaterialComponents/TextFields
@@ -61,6 +72,6 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 
-PODFILE CHECKSUM: 55fa811798795594854e9c29e41ec4e7d1295892
+PODFILE CHECKSUM: cbf3849517bc1ab5055a64d24ddc03984fa940e5
 
 COCOAPODS: 1.5.3

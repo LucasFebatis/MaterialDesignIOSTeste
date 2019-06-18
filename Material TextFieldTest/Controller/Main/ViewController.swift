@@ -19,16 +19,14 @@ class ViewController: UIPageViewController {
     var currentViewController: UIViewController!
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newColoredViewController("red"),
-                self.newColoredViewController("blue")]
+        return [
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "redController"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "blueController"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "bottomSheetController"),
+        ]
     }()
     
     var tabItems: [UITabBarItem]!
-    
-    private func newColoredViewController(_ color: String) -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil) .
-            instantiateViewController(withIdentifier: "\(color)Controller")
-    }
     
     override func viewDidLoad() {
         dataSource = self
@@ -50,9 +48,13 @@ class ViewController: UIPageViewController {
         var uiImage2 = UIImage(named: "access-point-network")
         uiImage2 = uiImage2?.resized(newSize: CGSize(width: 30, height: 30))
         
+        var uiImage3 = UIImage(named: "access-point-network")
+        uiImage3 = uiImage2?.resized(newSize: CGSize(width: 30, height: 30))
+        
         tabItems = [
-            UITabBarItem(title: "Recents", image: uiImage1, tag: 0),
-            UITabBarItem(title: "Favorites", image: uiImage2, tag: 0),
+            UITabBarItem(title: "Green", image: uiImage1, tag: 0),
+            UITabBarItem(title: "Blue", image: uiImage2, tag: 0),
+            UITabBarItem(title: "Bottom Sheet", image: uiImage3, tag: 0),
         ]
         
         tabBar2 = MDCTabBar(frame: view.bounds)
